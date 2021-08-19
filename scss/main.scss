@@ -1,2 +1,25 @@
-@import '00-settings/*';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import "00-settings/*";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+
+body {
+  position: relative;
+  height: 100vh;
+}
+.background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 704px;
+  height: 694px;
+  //   border: 1px dotted black;
+
+  &__triangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 600px solid #4e74ff;
+    border-left: 704px solid transparent;
+  }
+}
