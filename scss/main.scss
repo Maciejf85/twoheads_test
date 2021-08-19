@@ -176,6 +176,38 @@ body {
         }
       }
     }
+    .user__information {
+      margin-top: 82px;
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        .item-image {
+          width: 29px;
+          height: 29px;
+          border-radius: 50%;
+        }
+        .item-description {
+          margin-left: 14px;
+          .title {
+            font-size: 14px;
+            color: #42444d;
+            padding-bottom: 2px;
+          }
+          .progressbar {
+            margin-top: 6px;
+            width: 155px;
+            height: 4px;
+            background-color: #d7dbe8;
+            span {
+              height: 100%;
+              display: block;
+              background-color: #4e74ff;
+            }
+          }
+        }
+      }
+    }
   }
   &__section-right {
     .calendar {
