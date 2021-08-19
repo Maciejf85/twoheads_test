@@ -7,7 +7,6 @@ body {
 }
 .container {
   position: relative;
-  padding: 0;
 }
 .nav {
   margin-top: 34px;
@@ -48,7 +47,7 @@ body {
 
         &::before {
           position: absolute;
-          bottom: -3px;
+          bottom: 0;
           left: 0;
           content: "";
           display: block;
@@ -100,6 +99,7 @@ body {
   bottom: 0;
   width: 704px;
   height: 694px;
+  z-index: -1;
   //   border: 1px dotted black;
 
   &__triangle {
@@ -110,5 +110,35 @@ body {
     height: 0;
     border-bottom: 600px solid #4e74ff;
     border-left: 704px solid transparent;
+  }
+}
+
+.main {
+  margin-top: 135px;
+  // border: 1px dotted black;
+
+  &__section-left {
+    &-header {
+      max-width: 470px;
+      font-size: 64px;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: linear-gradient(166deg, #4e74ff -3%, #2046d1 118%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__section-right {
+    .calendar {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      height: 460px;
+      margin: 8px 0;
+      padding: 5px 0 0;
+      opacity: 0.92;
+      border-radius: 10px;
+      background-color: #42444d;
+    }
   }
 }
