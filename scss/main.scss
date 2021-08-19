@@ -102,7 +102,7 @@ body {
   width: 704px;
   height: 694px;
   z-index: -1;
-  //   border: 1px dotted black;
+  // border: 1px dotted black;
 
   &__triangle {
     position: absolute;
@@ -132,7 +132,6 @@ body {
     .notification__icon {
       display: flex;
       margin-top: 91px;
-      border: 1px solid red;
       &-item {
         display: flex;
         align-items: center;
@@ -171,6 +170,9 @@ body {
           color: #42444d;
           padding-bottom: 8px;
           margin-left: 30px;
+          &.small {
+            margin-left: 15px;
+          }
         }
       }
     }
