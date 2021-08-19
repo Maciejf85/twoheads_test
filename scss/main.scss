@@ -2,9 +2,98 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
 
 body {
-  position: relative;
+  font-family: "Open Sans", sans-serif;
   height: 100vh;
 }
+.container {
+  position: relative;
+  padding: 0;
+}
+.nav {
+  margin-top: 34px;
+  height: 30px;
+  line-height: 30px;
+  // border: 1px solid black;
+
+  &__logo {
+    width: 30px;
+    height: 30px;
+    border: 4px solid #4e74ff;
+    border-radius: 50%;
+  }
+  &__list {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8c909d;
+
+    li {
+      display: inline-flex;
+      margin-right: 30px;
+
+      .notification {
+        margin-left: 10px;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        background: #8c909d;
+        border-radius: 50%;
+        color: white;
+      }
+
+      .active {
+        position: relative;
+        color: #4e74ff;
+
+        &::before {
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          content: "";
+          display: block;
+          width: 20px;
+          border: 2px solid #4e74ff;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .user-container {
+      display: flex;
+      .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #000;
+      }
+      .name {
+        margin-left: 9px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: #4268f3;
+      }
+    }
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 16px;
+      span {
+        width: 100%;
+        height: 2px;
+        background: #4e74ff;
+      }
+    }
+  }
+}
+
 .background {
   position: absolute;
   right: 0;
