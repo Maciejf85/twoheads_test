@@ -28,9 +28,6 @@ body {
     font-weight: bold;
     color: #8c909d;
 
-    @media only screen and (min-width: #{$min-md}) {
-      display: flex;
-    }
     li {
       display: inline-flex;
       margin-right: 29px;
@@ -124,8 +121,6 @@ body {
 
 .main {
   margin-top: 135px;
-  // border: 1px dotted black;
-
   &__section-left {
     &-header {
       max-width: 470px;
