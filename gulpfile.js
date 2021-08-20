@@ -40,5 +40,5 @@ exports.serve = function() {
     });
 
     watch('scss/**/*.scss', { ignoreInitial: false }, series(scss, reload));
-    watch('./index.html', { ignoreInitial: false }, series(reload));
+    watch(['./index.html', './js/*.js'], { ignoreInitial: false }, series(reload));
 }
