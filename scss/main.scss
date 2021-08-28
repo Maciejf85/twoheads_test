@@ -9,7 +9,6 @@ body {
 
 .container {
   position: relative;
-  // border: 1px solid black;
   min-height: calc(849px - 34px);
   font-size: 0.65rem;
   @media #{$md} {
@@ -137,7 +136,6 @@ body {
   @media #{$lg} {
     border-bottom-width: calc(45em * 0.85);
     border-left-width: 45em;
-    // right: -30px;
   }
   @media #{$xl} {
     border-bottom-width: calc(50em * 0.85);
@@ -276,12 +274,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    // border: 1px solid red;
 
     @media #{$lg} {
       justify-content: space-between;
       align-items: flex-start;
-      // margin-top: 40px;
     }
     .calendar {
       position: relative;
@@ -293,7 +289,7 @@ body {
       padding: 18px;
       opacity: 0.92;
       border-radius: 10px;
-      background-color: rgba(66, 68, 77, 0.99);
+      background-color: rgba(66, 68, 77, 0.9);
       backdrop-filter: blur(9.2px);
 
       &__currentDate {
@@ -338,7 +334,6 @@ body {
       justify-content: center;
       margin: 40px 0 20px;
       width: 100%;
-      // border: 1px solid red;
       @media #{$md} {
         justify-content: flex-end;
       }
